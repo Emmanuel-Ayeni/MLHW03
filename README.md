@@ -57,14 +57,27 @@ Deployment: The model is exported for deployment, with a basic API interface exa
 ### How to Run the Project
 #### Clone the repository:
 bash
-
 git clone https://github.com//bank-marketing-ml.git
+
 #### Install dependencies:
 bash
 pip install -r requirements.txt
 
-Run the Jupyter notebook to explore the data, train the models, and evaluate performance.
+Run the Jupyter Notebook to explore the data, train the models, and evaluate performance.
 
 To deploy the model:
-Optionally, use the provided Flask API for inference (see the api.py file for details).
-The model can be loaded using joblib for deployment in your own application.
+Optional, use the Flask API for inference (see the api.py file for details).
+The model can be loaded using joblib for deployment in your application.
+
+
+### Results
+The project evaluates various machine learning models to predict whether a client will subscribe to a term deposit. The best model is selected based on performance metrics like AUC-ROC, precision, and recall.
+
+### Technologies Used
+Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)
+Jupyter Notebooks
+Flask (for optional model deployment)
+Joblib (for model saving and loading)
+
+### Acknowledgments
+The dataset provided by the UCI Machine Learning Repository: Bank Marketing Dataset.
